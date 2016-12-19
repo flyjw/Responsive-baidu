@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="referrer" content="always">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="https://m.baidu.com/static/index/screen_icon.png">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="baidu.css" />
+    <title>百度一下，你就知道</title>
+</head>
+<script type="text/javascript">
+function showTip1(sId) {
+    // alert("showHello");
+    var tr1 = document.getElementById("setbar"); //将要弹出的层  
+    tr1.style.display = "block"; //div2初始状态是不可见的，设置可为可见  
+    //window.event代表事件状态，如事件发生的元素，键盘状态，鼠标位置和鼠标按钮状.  
+    //clientX是鼠标指针位置相对于窗口客户区域的 x 坐标，其中客户区域不包括窗口自身的控件和滚动条。  
+}
+
+function hideTip1(sId) {
+    var tr1 = document.getElementById("setbar");
+    tr1.style.display = "none";
+}
+
+function showTip2(sId) {
+    // alert("showHello");
+    var tr1 = document.getElementById("morebox"); //将要弹出的层  
+    tr1.style.display = "block"; //div2初始状态是不可见的，设置可为可见  
+    //window.event代表事件状态，如事件发生的元素，键盘状态，鼠标位置和鼠标按钮状.  
+    //clientX是鼠标指针位置相对于窗口客户区域的 x 坐标，其中客户区域不包括窗口自身的控件和滚动条。  
+}
+
+function hideTip2(sId) {
+    var tr1 = document.getElementById("morebox");
+    tr1.style.display = "none";
+}
+</script>
+
+<body>
+    <!-- PC页面 -->
+    <div id="container">
+        <div id="head">
+            <div class="head_container">
+                <div class="content">
+                    <div class="content_container">
+                        <div class="logo">
+                            <a title="百度一下" href="www.baidu.com"><img src="bd_logo1.png" alt="百度logo" /></a>
+                        </div>
+                        <form action="" id="search" name="search" class="sc">
+                            <input class="text1" name="text1" autofocus="autofocus" />
+                            <input type="submit" class="btn1" value="百度一下" />
+                        </form>
+                        <div id="m"></div>
+                    </div>
+                </div>
+                <div id="u"></div>
+                <div id="u1" class="nav">
+                    <a href="">新闻</a>
+                    <a href="">hao123</a>
+                    <a href="">地图</a>
+                    <a href="">视频</a>
+                    <a href="">贴吧</a>
+                    <a href="" class="login">登录</a>
+                    <a href="" class="set" id="set" onMouseMove="showTip1('setbar')">设置</a>
+                    <a href="" class="more" onMouseMove="showTip2('morebox')">更多产品</a>
+                    <div class="bdnuarrow bdbriarrow" style="display: none;"></div>
+                </div>
+                <div class="morebox" id="morebox" onMouseMove="showTip2('morebox')" onMouseOut="hideTip2('morebox')">
+                    <div class="morelink">
+                        <div class="products">更多产品</div>
+                        <div class="include">
+                            <div class="include_product">
+                                <div class="details">
+                                    <a href=""><span class="picture1"></span>糯米</a>
+                                    <a href=""><span class="picture2"></span>知道</a>
+                                    <a href=""><span class="picture3"></span>音乐</a>
+                                    <a href=""><span class="picture4"></span>图片</a>
+                                    <a href=""><span class="picture5"></span>文库</a>
+                                    <a href=""><span class="picture6"></span>风云榜</a>
+                                    <a href=""><span class="picture7"></span>百度推广</a>
+                                    <div class="both">
+                                        <a href="">全部产品&gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bdbri bdbriimg"></div>
+            </div>
+        </div>
+        <div class="s_tab" id="s_tab"></div>
+        <div id="ftcon">
+            <div id="ftconw">
+                <p id="lh">
+                    <a href="">把百度设为主页</a>
+                    <a href="">关于百度</a>
+                    <a href="">About&nbsp;&nbsp;Baidu</a>
+                </p>
+                <p id="cp">
+                    <span>©2015&nbsp;Baidu&nbsp;</span>
+                    <a href="">使用百度前必读</a>
+                    <a href="">意见反馈</a>
+                    <span>京ICP证030173号</span>
+                    <i class="icon"></i>
+                </p>
+            </div>
+        </div>
+        <div class="setbar" id="setbar" onMouseMove="showTip1('setbar')" onMouseOut="hideTip1('setbar')">
+            <div class="setbararrow">
+                <em></em>
+                <i></i>
+            </div>
+            <a class="setbref" href="">搜索设置</a>
+            <a href="">高级搜索</a>
+            <a href="">关闭预测</a>
+            <a href="">搜索历史</a>
+        </div>
+        <div id="outer_outer"></div>
+        <div class="bdpfmenu"></div>
+    </div>
+    <!-- PC页面 -->
+    <!-- Pad页面 -->
+    <div id="wrapper1">
+        <!-- 顶部 -->
+        <div id="header">
+            <div class="weather">
+                <div>29°</div>
+                <span class="icon-cloud"></span>
+                <div class="weather-status">
+                    <p>北京</p>
+                    <p>空气&nbsp;31</p>
+                </div>
+                <span class="icon-downarrow"></span>
+            </div>
+            <div class="userinfo-wrap"><a class="login" href="#"><span class="icon-usher"></span></a>
+            </div>
+        </div>
+        <!-- 顶部 -->
+        <!-- 搜索 -->
+        <div id="search">
+            <div class="logo" class="noTapColor"><img src="plus_logo.png" alt="百度一下,你就知道"></div>
+            <form action="">
+                <input type="text" autocomplete="off" autocorrect="off" id="index-kw" name="word" class="se-input">
+                <input id="index-bn" class="se-bn" type="submit" value="百度一下">
+            </form>
+        </div>
+        <!-- 搜索 -->
+        <!-- 导航 -->
+        <div id="nav">
+            <a href=""><span class="icon-news"></span><p>新闻</p></a>
+            <a href=""><span class="icon-book"></span><p>小说</p></a>
+            <a href=""><span class="icon-movie"></span><p>视频</p></a>
+            <a href=""><span class="icon-live"></span><p>生活+</p></a>
+            <a href=""><span class="icon-placeholder20"></span><p>地图</p></a>
+            <a href=""><span class="icon-more"></span><p>更多</p></a>
+        </div>
+        <!-- 导航 -->
+        <!-- 常用网址 -->
+        <div id="address">
+            <div class="top">
+                <span class="icon-earth"></span>
+                <span class="head1">常用网址</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="content">
+                <a href="">贴吧</a>
+                <a href="">hao123</a>
+                <a href="">地图</a>
+                <a href="">应用</a>
+                <a href="">图片</a>
+                <a href="">音乐</a>
+                <a href=""><span class="icon-plus"></span></a>
+            </div>
+        </div>
+        <!-- 常用网址 -->
+        <!-- 实时热点 -->
+        <div id="hot">
+            <div class="top">
+                <span class="icon-news2"></span>
+                <span class="head1">实时热点</span>
+                <span class="icon-gengxin"></span>
+                <span class="head2">换一批</span>
+                <span class="head1">|</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="content2">
+                <a href="">2岁幼子冰毒阳性</a>
+                <a href="">最严手机实名制</a>
+                <a href="">指挥倒车被碾压</a>
+                <a href="">熊孩子拧开消防栓</a>
+                <a href="">保安专钓90后</a>
+                <a href="">夏克立退出爸爸3</a>
+            </div>
+        </div>
+        <!-- 实时热点 -->
+        <!-- 周边服务 -->
+        <div id="severs">
+            <div class="top">
+                <span class="icon-placeholder"></span>
+                <span class="head1">周边服务</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="middle">
+                <span>点击定位，查看附近位置信息</span><a href=""><span class="icon-localization"></span>定位</a>
+            </div>
+            <div class="content3">
+                <a href=""><span class="icon-movie2"></span><p>看电影</p></a>
+                <a href=""><span class="icon-food"></span><p>&nbsp;&nbsp;美食</p></a>
+                <a href=""><span class="icon-building"></span><p>&nbsp;&nbsp;酒店</p></a>
+                <a href=""><span class="icon-dollar"></span><p>&nbsp;&nbsp;银行</p></a>
+                <a href=""><span class="icon-bus"></span><p>公交站</p></a>
+                <a href=""><span class="icon-king"></span><p>&nbsp;&nbsp;景点</p></a>
+                <a href=""><span class="icon-waimai"></span><p>&nbsp;&nbsp;外卖</p></a>
+                <a href=""><span class="icon-label23"></span><p>&nbsp;&nbsp;团购</p></a>
+            </div>
+        </div>
+        <!-- 周边服务 -->
+        <!-- 电影票 -->
+        <div id="film">
+            <div class="top">
+                <span class="icon-yen"></span>
+                <span class="head1">电影票</span>
+                <span class="icon-gengxin"></span>
+                <span class="head2">换一部</span>
+                <span class="head1">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="content4">
+                <div class="flimimg">
+                    <img src="film.jpg" alt="">
+                </div>
+                <div class="filmdetails">
+                    <p>终结者：创世纪</p>
+                    <span>8.1分&nbsp;|&nbsp;科幻&nbsp;|&nbsp;动作&nbsp;|&nbsp;冒险</span>
+                    <span>加州州长，暴力拯救世界</span>
+                    <a href="">立即购票</a>
+                </div>
+                <div class="morefilm">
+                    <a href="">更多热映电影</a><span class="icon-arrowheadright"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 电影票 -->
+        <!-- 管理我的首页 -->
+        <div id="mydeafault"><span class="icon-set"></span><a href="">管理我的首页</a></div>
+        <!-- 管理我的首页 -->
+        <!-- 百度推广 -->
+        <div id="promote">
+            <a href=""><b>HOT</b>&nbsp;&nbsp;百度浏览器，上网提速200%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
+            <a href=""><img src="w_icon2.png" alt="">&nbsp;&nbsp;&nbsp;手机百度，最省流量的极速搜索APP<span class="icon-arrowheadright"></a>
+            <a href=""><b>HOT</b>&nbsp;&nbsp;百度推广，让有需求的客户找到你&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
+        </div>
+        <!-- 百度推广 -->
+        <!-- 底部 -->
+        <div id="bottom">
+            <a href="">极速版</a>
+            <a href="">用户反馈</a>
+            <span>使用百度前必读 Baidu 京ICP证030173号</span>
+        </div>
+        <!-- 底部 -->
+    </div>
+    <!-- Pad页面 -->
+    <!-- 手机页面 -->
+    <div id="wrapper">
+        <!-- 顶部 -->
+        <div id="header">
+            <div class="weather">
+                <div>29°</div>
+                <span class="icon-cloud"></span>
+                <div class="weather-status">
+                    <p>北京</p>
+                    <p>空气&nbsp;31</p>
+                </div>
+                <span class="icon-downarrow"></span>
+            </div>
+            <div class="userinfo-wrap"><a class="login" href="#"><span class="icon-usher"></span></a>
+            </div>
+        </div>
+        <!-- 顶部 -->
+        <!-- 搜索 -->
+        <div id="search">
+            <div class="logo" class="noTapColor"><img src="plus_logo.png" alt="百度一下,你就知道"></div>
+            <form action="">
+                <input type="text" autocomplete="off" autocorrect="off" id="index-kw" name="word" class="se-input">
+                <input id="index-bn" class="se-bn" type="submit" value="百度一下">
+            </form>
+        </div>
+        <!-- 搜索 -->
+        <!-- 导航 -->
+        <div id="nav">
+            <a href=""><span class="icon-news"></span><p>新闻</p></a>
+            <a href=""><span class="icon-book"></span><p>小说</p></a>
+            <a href=""><span class="icon-movie"></span><p>视频</p></a>
+            <a href=""><span class="icon-live"></span><p>生活+</p></a>
+            <a href=""><span class="icon-placeholder20"></span><p>地图</p></a>
+            <a href=""><span class="icon-more"></span><p>更多</p></a>
+        </div>
+        <!-- 导航 -->
+        <!-- 常用网址 -->
+        <div id="address">
+            <div class="top">
+                <span class="icon-earth"></span>
+                <span class="head1">常用网址</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="content">
+                <a href="">贴吧</a>
+                <a href="">hao123</a>
+                <a href="">地图</a>
+                <a href="">应用</a>
+                <a href="">图片</a>
+                <a href="">音乐</a>
+                <a href=""><span class="icon-plus"></span></a>
+            </div>
+        </div>
+        <!-- 常用网址 -->
+        <!-- 实时热点 -->
+        <div id="hot">
+            <div class="top">
+                <span class="icon-news2"></span>
+                <span class="head1">实时热点</span>
+                <span class="icon-gengxin"></span>
+                <span class="head2">换一批</span>
+                <span class="head1">|</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="content2">
+                <a href="">2岁幼子冰毒阳性</a>
+                <a href="">最严手机实名制</a>
+                <a href="">指挥倒车被碾压</a>
+                <a href="">熊孩子拧开消防栓</a>
+                <a href="">保安专钓90后</a>
+                <a href="">夏克立退出爸爸3</a>
+            </div>
+        </div>
+        <!-- 实时热点 -->
+        <!-- 周边服务 -->
+        <div id="severs">
+            <div class="top">
+                <span class="icon-placeholder"></span>
+                <span class="head1">周边服务</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="middle">
+                <span>点击定位，查看附近位置信息</span><a href=""><span class="icon-localization"></span>定位</a>
+            </div>
+            <div class="content3">
+                <a href=""><span class="icon-movie2"></span><p>看电影</p></a>
+                <a href=""><span class="icon-food"></span><p>&nbsp;&nbsp;美食</p></a>
+                <a href=""><span class="icon-building"></span><p>&nbsp;&nbsp;酒店</p></a>
+                <a href=""><span class="icon-dollar"></span><p>&nbsp;&nbsp;银行</p></a>
+                <a href=""><span class="icon-bus"></span><p>公交站</p></a>
+                <a href=""><span class="icon-king"></span><p>&nbsp;&nbsp;景点</p></a>
+                <a href=""><span class="icon-waimai"></span><p>&nbsp;&nbsp;外卖</p></a>
+                <a href=""><span class="icon-label23"></span><p>&nbsp;&nbsp;团购</p></a>
+            </div>
+        </div>
+        <!-- 周边服务 -->
+        <!-- 电影票 -->
+        <div id="film">
+            <div class="top">
+                <span class="icon-yen"></span>
+                <span class="head1">电影票</span>
+                <span class="icon-gengxin"></span>
+                <span class="head2">换一部</span>
+                <span class="head1">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                <span class="icon-dianidan"></span>
+            </div>
+            <div class="content4">
+                <div class="flimimg">
+                    <img src="film.jpg" alt="">
+                </div>
+                <div class="filmdetails">
+                    <p>终结者：创世纪</p>
+                    <span>8.1分&nbsp;|&nbsp;科幻&nbsp;|&nbsp;动作&nbsp;|&nbsp;冒险</span>
+                    <span>加州州长，暴力拯救世界</span>
+                    <a href="">立即购票</a>
+                </div>
+                <div class="morefilm">
+                    <a href="">更多热映电影</a><span class="icon-arrowheadright"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 电影票 -->
+        <!-- 管理我的首页 -->
+        <div id="mydeafault"><span class="icon-set"></span><a href="">管理我的首页</a></div>
+        <!-- 管理我的首页 -->
+        <!-- 百度推广 -->
+        <div id="promote">
+            <a href=""><b>HOT</b>&nbsp;&nbsp;百度浏览器，上网提速200%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
+            <a href=""><img src="w_icon2.png" alt="">&nbsp;&nbsp;&nbsp;手机百度，最省流量的极速搜索APP<span class="icon-arrowheadright"></a>
+            <a href=""><b>HOT</b>&nbsp;&nbsp;百度推广，让有需求的客户找到你&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
+        </div>
+        <!-- 百度推广 -->
+        <!-- 底部 -->
+        <div id="bottom">
+            <a href="">极速版</a>
+            <a href="">用户反馈</a>
+            <span>使用百度前必读 Baidu 京ICP证030173号</span>
+        </div>
+        <!-- 底部 -->
+    </div>
+    <!-- 手机页面 -->
+</body>
+
+</html>
