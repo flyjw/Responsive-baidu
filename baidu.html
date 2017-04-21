@@ -12,36 +12,9 @@
     <link rel="stylesheet" type="text/css" href="baidu.css" />
     <title>百度一下，你就知道</title>
 </head>
-<script type="text/javascript">
-function showTip1(sId) {
-    // alert("showHello");
-    var tr1 = document.getElementById("setbar"); //将要弹出的层  
-    tr1.style.display = "block"; //div2初始状态是不可见的，设置可为可见  
-    //window.event代表事件状态，如事件发生的元素，键盘状态，鼠标位置和鼠标按钮状.  
-    //clientX是鼠标指针位置相对于窗口客户区域的 x 坐标，其中客户区域不包括窗口自身的控件和滚动条。  
-}
-
-function hideTip1(sId) {
-    var tr1 = document.getElementById("setbar");
-    tr1.style.display = "none";
-}
-
-function showTip2(sId) {
-    // alert("showHello");
-    var tr1 = document.getElementById("morebox"); //将要弹出的层  
-    tr1.style.display = "block"; //div2初始状态是不可见的，设置可为可见  
-    //window.event代表事件状态，如事件发生的元素，键盘状态，鼠标位置和鼠标按钮状.  
-    //clientX是鼠标指针位置相对于窗口客户区域的 x 坐标，其中客户区域不包括窗口自身的控件和滚动条。  
-}
-
-function hideTip2(sId) {
-    var tr1 = document.getElementById("morebox");
-    tr1.style.display = "none";
-}
-</script>
 
 <body>
-    <!-- PC页面 -->
+    <!-- 大屏幕以及中等屏幕页面 -->
     <div id="container">
         <div id="head">
             <div class="head_container">
@@ -123,8 +96,7 @@ function hideTip2(sId) {
         <div id="outer_outer"></div>
         <div class="bdpfmenu"></div>
     </div>
-    <!-- PC页面 -->
-    <!-- Pad页面 -->
+    <!-- 小屏幕平板页面 -->
     <div id="wrapper1">
         <!-- 顶部 -->
         <div id="header">
@@ -140,7 +112,6 @@ function hideTip2(sId) {
             <div class="userinfo-wrap"><a class="login" href="#"><span class="icon-usher"></span></a>
             </div>
         </div>
-        <!-- 顶部 -->
         <!-- 搜索 -->
         <div id="search">
             <div class="logo" class="noTapColor"><img src="plus_logo.png" alt="百度一下,你就知道"></div>
@@ -149,7 +120,6 @@ function hideTip2(sId) {
                 <input id="index-bn" class="se-bn" type="submit" value="百度一下">
             </form>
         </div>
-        <!-- 搜索 -->
         <!-- 导航 -->
         <div id="nav">
             <a href=""><span class="icon-news"></span><p>新闻</p></a>
@@ -159,7 +129,6 @@ function hideTip2(sId) {
             <a href=""><span class="icon-placeholder20"></span><p>地图</p></a>
             <a href=""><span class="icon-more"></span><p>更多</p></a>
         </div>
-        <!-- 导航 -->
         <!-- 常用网址 -->
         <div id="address">
             <div class="top">
@@ -177,16 +146,19 @@ function hideTip2(sId) {
                 <a href=""><span class="icon-plus"></span></a>
             </div>
         </div>
-        <!-- 常用网址 -->
         <!-- 实时热点 -->
         <div id="hot">
             <div class="top">
-                <span class="icon-news2"></span>
-                <span class="head1">实时热点</span>
-                <span class="icon-gengxin"></span>
-                <span class="head2">换一批</span>
-                <span class="head1">|</span>
-                <span class="icon-dianidan"></span>
+                <div>
+                    <span class="icon-news2"></span>
+                    <span class="head1">实时热点</span>
+                </div>
+                <div>
+                    <span class="icon-gengxin"></span>
+                    <span class="head2">换一批</span>
+                    <span class="head1">|</span>
+                    <span class="icon-dianidan"></span>
+                </div>
             </div>
             <div class="content2">
                 <a href="">2岁幼子冰毒阳性</a>
@@ -197,7 +169,6 @@ function hideTip2(sId) {
                 <a href="">夏克立退出爸爸3</a>
             </div>
         </div>
-        <!-- 实时热点 -->
         <!-- 周边服务 -->
         <div id="severs">
             <div class="top">
@@ -206,7 +177,7 @@ function hideTip2(sId) {
                 <span class="icon-dianidan"></span>
             </div>
             <div class="middle">
-                <span>点击定位，查看附近位置信息</span><a href=""><span class="icon-localization"></span>定位</a>
+                <span>点击定位，查看附近位置信息</span><a href=""><i class="icon-localization"></i>定位</a>
             </div>
             <div class="content3">
                 <a href=""><span class="icon-movie2"></span><p>看电影</p></a>
@@ -219,16 +190,17 @@ function hideTip2(sId) {
                 <a href=""><span class="icon-label23"></span><p>&nbsp;&nbsp;团购</p></a>
             </div>
         </div>
-        <!-- 周边服务 -->
         <!-- 电影票 -->
         <div id="film">
             <div class="top">
-                <span class="icon-yen"></span>
-                <span class="head1">电影票</span>
-                <span class="icon-gengxin"></span>
-                <span class="head2">换一部</span>
-                <span class="head1">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
-                <span class="icon-dianidan"></span>
+                <div><span class="icon-yen"></span>
+                    <span class="head1">电影票</span>
+                </div>
+                <div><span class="icon-gengxin"></span>
+                    <span class="head2">换一部</span>
+                    <span class="head1">|</span>
+                    <span class="icon-dianidan"></span>
+                </div>
             </div>
             <div class="content4">
                 <div class="flimimg">
@@ -245,27 +217,22 @@ function hideTip2(sId) {
                 </div>
             </div>
         </div>
-        <!-- 电影票 -->
         <!-- 管理我的首页 -->
         <div id="mydeafault"><span class="icon-set"></span><a href="">管理我的首页</a></div>
-        <!-- 管理我的首页 -->
         <!-- 百度推广 -->
         <div id="promote">
             <a href=""><b>HOT</b>&nbsp;&nbsp;百度浏览器，上网提速200%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
             <a href=""><img src="w_icon2.png" alt="">&nbsp;&nbsp;&nbsp;手机百度，最省流量的极速搜索APP<span class="icon-arrowheadright"></a>
             <a href=""><b>HOT</b>&nbsp;&nbsp;百度推广，让有需求的客户找到你&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
         </div>
-        <!-- 百度推广 -->
         <!-- 底部 -->
         <div id="bottom">
             <a href="">极速版</a>
             <a href="">用户反馈</a>
             <span>使用百度前必读 Baidu 京ICP证030173号</span>
         </div>
-        <!-- 底部 -->
     </div>
-    <!-- Pad页面 -->
-    <!-- 手机页面 -->
+    <!-- 手机移动设备页面 -->
     <div id="wrapper">
         <!-- 顶部 -->
         <div id="header">
@@ -281,7 +248,6 @@ function hideTip2(sId) {
             <div class="userinfo-wrap"><a class="login" href="#"><span class="icon-usher"></span></a>
             </div>
         </div>
-        <!-- 顶部 -->
         <!-- 搜索 -->
         <div id="search">
             <div class="logo" class="noTapColor"><img src="plus_logo.png" alt="百度一下,你就知道"></div>
@@ -290,7 +256,6 @@ function hideTip2(sId) {
                 <input id="index-bn" class="se-bn" type="submit" value="百度一下">
             </form>
         </div>
-        <!-- 搜索 -->
         <!-- 导航 -->
         <div id="nav">
             <a href=""><span class="icon-news"></span><p>新闻</p></a>
@@ -300,7 +265,6 @@ function hideTip2(sId) {
             <a href=""><span class="icon-placeholder20"></span><p>地图</p></a>
             <a href=""><span class="icon-more"></span><p>更多</p></a>
         </div>
-        <!-- 导航 -->
         <!-- 常用网址 -->
         <div id="address">
             <div class="top">
@@ -318,7 +282,6 @@ function hideTip2(sId) {
                 <a href=""><span class="icon-plus"></span></a>
             </div>
         </div>
-        <!-- 常用网址 -->
         <!-- 实时热点 -->
         <div id="hot">
             <div class="top">
@@ -338,7 +301,6 @@ function hideTip2(sId) {
                 <a href="">夏克立退出爸爸3</a>
             </div>
         </div>
-        <!-- 实时热点 -->
         <!-- 周边服务 -->
         <div id="severs">
             <div class="top">
@@ -360,7 +322,6 @@ function hideTip2(sId) {
                 <a href=""><span class="icon-label23"></span><p>&nbsp;&nbsp;团购</p></a>
             </div>
         </div>
-        <!-- 周边服务 -->
         <!-- 电影票 -->
         <div id="film">
             <div class="top">
@@ -386,26 +347,42 @@ function hideTip2(sId) {
                 </div>
             </div>
         </div>
-        <!-- 电影票 -->
         <!-- 管理我的首页 -->
         <div id="mydeafault"><span class="icon-set"></span><a href="">管理我的首页</a></div>
-        <!-- 管理我的首页 -->
         <!-- 百度推广 -->
         <div id="promote">
             <a href=""><b>HOT</b>&nbsp;&nbsp;百度浏览器，上网提速200%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
             <a href=""><img src="w_icon2.png" alt="">&nbsp;&nbsp;&nbsp;手机百度，最省流量的极速搜索APP<span class="icon-arrowheadright"></a>
             <a href=""><b>HOT</b>&nbsp;&nbsp;百度推广，让有需求的客户找到你&nbsp;&nbsp;&nbsp;<span class="icon-arrowheadright"></a>
         </div>
-        <!-- 百度推广 -->
         <!-- 底部 -->
         <div id="bottom">
             <a href="">极速版</a>
             <a href="">用户反馈</a>
             <span>使用百度前必读 Baidu 京ICP证030173号</span>
         </div>
-        <!-- 底部 -->
     </div>
-    <!-- 手机页面 -->
+    <script type="text/javascript">
+    function showTip1(sId) {
+        var tr1 = document.getElementById("setbar");
+        tr1.style.display = "block";
+    }
+
+    function hideTip1(sId) {
+        var tr1 = document.getElementById("setbar");
+        tr1.style.display = "none";
+    }
+
+    function showTip2(sId) {
+        var tr1 = document.getElementById("morebox");
+        tr1.style.display = "block";
+    }
+
+    function hideTip2(sId) {
+        var tr1 = document.getElementById("morebox");
+        tr1.style.display = "none";
+    }
+    </script>
 </body>
 
 </html>
